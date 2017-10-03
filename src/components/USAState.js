@@ -1,11 +1,8 @@
 import React from "react";
 
-class USAState extends React.Component {
-  render() {
-    return (
-      <path d={this.props.dimensions} fill={this.props.fill} data-name={this.props.state} className={`${this.props.state} state`} onClick={this.props.onClickState} />
-    );
-  }
+const USAState = (props) => {
+  return (
+    <path d={props.dimensions} fill={props.fill} data-name={props.state} className={`${props.state} state`} onClick={props.onClickState} />
+  );
 }
-
 export default USAState;
