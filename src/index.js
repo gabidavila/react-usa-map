@@ -36,8 +36,8 @@ class USAMap extends React.Component {
         <g className="outlines">
           {this.buildPaths()}
           <g className="DC state">
-            <path className="DC1" onClick={this.clickHandler} data-name={"DC"} fill={this.fillStateColor("DC")} d="M801.8,253.8 l-1.1-1.6 -1-0.8 1.1-1.6 2.2,1.5z" />
-            <circle className="DC2" fill={this.fillStateColor("DC")} stroke="#FFFFFF" strokeWidth="1.5" cx="801.3" cy="251.8" r="5" opacity="1" />
+            <path className="DC1" fill={this.fillStateColor("DC")} d="M801.8,253.8 l-1.1-1.6 -1-0.8 1.1-1.6 2.2,1.5z" />
+            <circle className="DC2" onClick={this.clickHandler} data-name={"DC"} fill={this.fillStateColor("DC")} stroke="#FFFFFF" strokeWidth="1.5" cx="801.3" cy="251.8" r="5" opacity="1" />
           </g>
         </g>
       </svg>
