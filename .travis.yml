@@ -9,4 +9,5 @@ branches:
   - master
 script:
 - npm install
+- npm test
 - npm run build # build project
