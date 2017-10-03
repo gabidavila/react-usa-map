@@ -45,7 +45,7 @@ describe("Component: USAMap", () => {
 
   it("should calls `onClick` when the component is clicked", () => {
     expect(onClickMock.mock.calls.length).toEqual(0);
-    const state = element.find(".DC.state");
+    const state = element.find(".state .DC2");
     state.simulate("click");
     expect(onClickMock.mock.calls[0]).toEqual([undefined]);
   });
