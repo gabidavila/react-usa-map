@@ -1,5 +1,7 @@
 # react-usa-map | A simple SVG USA map rendering on React
 
+[![Build Status](https://travis-ci.org/gabidavila/react-usa-map.svg?branch=master)](https://travis-ci.org/gabidavila/react-usa-map)
+
 This is an alternate version for you that just want a simple customizable map on HTML. This maps shows states delimitations including DC, Hawaii and Alaska. D3 is not needed.
 
 ## [Live Example](http://react-usa-map-demo.herokuapp.com)
