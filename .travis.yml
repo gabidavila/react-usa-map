@@ -8,6 +8,6 @@ branches:
   only:
   - master
 script:
-- npm install
-- npm test
-- npm run build # build project
+- yarn install
+- yarn test
+- yarn prepublish
