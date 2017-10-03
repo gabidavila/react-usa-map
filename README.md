@@ -5,6 +5,16 @@ This is an alternate version for you that just want a simple customizable map on
 ## [Live Example](http://react-usa-map-demo.herokuapp.com)
 Code: [http://github.com/gabidavila/react-usa-map-demo](http://github.com/gabidavila/react-usa-map-demo)
 
+## Installation
+
+It requires `react` 15.4.2 or higher. Run:
+
+`yarn add react-usa-map`
+
+or
+
+`npm install react-usa-map --save`
+
 ## Usage
 
 The below example shows the mandatory `onClick` event.
