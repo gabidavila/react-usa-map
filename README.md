@@ -56,11 +56,12 @@ class App extends Component {
     alert(event.target.dataset.name);
   };
 
-  /* optional customization of filling per state */
-  statesFilling = () => {
+  /* optional customization of filling per state and calling custom callbacks per state */
+  statesCustomConfig = () => {
     return {
       "NJ": {
-        fill: "navy"
+        fill: "navy",
+        clickHandler: (event) => console.log('Custom handler for NJ', event.target.dataset)
       },
       "NY": {
         fill: "#CC0000"
@@ -71,7 +72,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <USAMap customize={this.statesFilling()} onClick={this.mapHandler} />
+        <USAMap customize={this.statesCustomConfig()} onClick={this.mapHandler} />
       </div>
     );
   }

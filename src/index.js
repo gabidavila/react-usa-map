@@ -20,10 +20,17 @@ class USAMap extends React.Component {
     return this.props.defaultFill;
   };
 
+  stateClickHandler = (state) => {
+    if (this.props.customize && this.props.customize[state] && this.props.customize[state].clickHandler) {
+      return this.props.customize[state].clickHandler
+    }
+    return this.clickHandler;
+  }
+
   buildPaths = () => {
     let paths = [];
     for (let stateKey in data) {
-      const path = <USAState key={stateKey} dimensions={data[stateKey]["dimensions"]} state={stateKey} fill={this.fillStateColor(stateKey)} onClickState={this.clickHandler} />
+      const path = <USAState key={stateKey} dimensions={data[stateKey]["dimensions"]} state={stateKey} fill={this.fillStateColor(stateKey)} onClickState={this.stateClickHandler(stateKey)} />
       paths.push(path);
     };
     return paths;
