@@ -102,7 +102,9 @@ path:hover {
 
 # License
 
-Please refer to [license](LICENSE.md).
+This project is license is MIT, for more information please refer to [license](LICENSE.md).
+
+The map is sourced from [wikimedia](https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg) and is under [Creative Commons Attribution-Share Alike 3.0 Unported](https://spdx.org/licenses/CC-BY-SA-3.0.html) license.
 
 # Contributing
 
