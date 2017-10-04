@@ -11,7 +11,7 @@ before_install:
 install:
   - yarn install --no-progress
 script:
-  - yarn test -- --coverage
+  - yarn test --coverage
 
 after_success:
   - yarn prepublish
