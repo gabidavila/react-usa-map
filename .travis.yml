@@ -7,7 +7,7 @@ branches:
   only:
   - master
 before_install:
-  - npm install -g --no-progress yarn@v0.22.0
+  - npm install -g --no-progress npm@latest yarn
 install:
   - yarn install --no-progress
 script:
