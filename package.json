@@ -1,57 +1,62 @@
 {
-    "name": "react-usa-map",
-    "version": "1.2.1",
-    "description": "React component with all USA States with customizable options",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/gabidavila/react-usa-map.git"
-    },
-    "author": "Gabriela D'Avila Ferrara <me@gabriela.io>",
-    "bugs": {
-        "url": "https://github.com/gabidavila/react-usa-map/issues"
-    },
-    "homepage": "https://github.com/gabidavila/react-usa-map#readme",
-    "keywords": [
-        "react-component",
-        "react",
-        "usa map",
-        "map",
-        "svg"
-    ],
-    "scripts": {
-        "prepublish": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
-        "lint": "eslint ./src",
-        "lintfix": "eslint ./src --fix",
-        "pretest": "yarn run lint",
-        "test": "jest --coverage"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-core": "^6.26.0",
-        "babel-eslint": "^8.0.1",
-        "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
-        "babel-polyfill": "^6.26.0",
-        "babel-preset-es2015": "^6.24.1",
-        "babel-preset-react": "^6.24.1",
-        "babel-preset-stage-2": "^6.24.1",
-        "enzyme": "^3.1.0",
-        "enzyme-adapter-react-15": "^1.0.1",
-        "eslint": "^4.8.0",
-        "eslint-plugin-babel": "^4.1.2",
-        "eslint-plugin-react": "^7.4.0",
-        "jest": "^21.2.1",
-        "nodemon": "^1.12.1",
-        "react": "^15.4.2",
-        "react-addons-test-utils": "^15.4.2",
-        "react-dom": "^15.4.2",
-        "react-test-renderer": "15"
-    },
-    "peerDependencies": {
-        "react": "^15.4.2",
-        "react-dom": "^15.4.2"
-    },
-    "dependencies": {
-        "babel-runtime": "^6.26.0"
-    }
+  "name": "react-usa-map",
+  "version": "1.2.1",
+  "description": "React component with all USA States with customizable options",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabidavila/react-usa-map.git"
+  },
+  "author": "Gabriela D'Avila Ferrara <me@gabriela.io>",
+  "bugs": {
+    "url": "https://github.com/gabidavila/react-usa-map/issues"
+  },
+  "homepage": "https://github.com/gabidavila/react-usa-map#readme",
+  "keywords": [
+    "react-component",
+    "react",
+    "usa map",
+    "map",
+    "svg"
+  ],
+  "scripts": {
+    "prepublish": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+    "lint": "eslint ./src",
+    "lintfix": "eslint ./src --fix",
+    "pretest": "yarn run lint",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-15": "^1.0.1",
+    "eslint": "^4.8.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-test-renderer": "15",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.6.0"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  }
 }
