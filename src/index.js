@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import data from "./data/usa-map-dimensions";
 import USAState from "./components/USAState";
 
+import "./styles/app.css";
+
 class USAMap extends React.Component {
   constructor(props) {
     super(props);
