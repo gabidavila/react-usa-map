@@ -1,3 +1,3 @@
-const data = require("./dimensions.json")
+import data from "./dimensions.json";
 
 export default data;
