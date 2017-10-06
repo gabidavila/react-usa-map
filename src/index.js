@@ -11,7 +11,7 @@ class USAMap extends React.Component {
   
   clickHandler = (stateAbbreviation) => {
     this.props.onClick(stateAbbreviation);
-    };
+  };
 
   fillStateColor = (state) => {
     if (this.props.customize && this.props.customize[state] && this.props.customize[state].fill) {
