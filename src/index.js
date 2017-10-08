@@ -6,7 +6,7 @@ import USAState from "./components/USAState";
 class USAMap extends React.Component {
 
   clickHandler = (stateAbbreviation) => {
-    props.onClick(stateAbbreviation);
+    this.props.onClick(stateAbbreviation);
   };
 
   fillStateColor = (state) => {
