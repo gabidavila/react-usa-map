@@ -4,13 +4,10 @@ import data from "./data/usa-map-dimensions";
 import USAState from "./components/USAState";
 
 class USAMap extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.clickHandler = (stateAbbreviation) => {
-      props.onClick(stateAbbreviation);
-    };
-  }
+  clickHandler = (stateAbbreviation) => {
+    props.onClick(stateAbbreviation);
+  };
 
   fillStateColor = (state) => {
     if (this.props.customize && this.props.customize[state] && this.props.customize[state].fill) {
