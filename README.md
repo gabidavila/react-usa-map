@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.org/gabidavila/react-usa-map.svg?branch=master)](https://travis-ci.org/gabidavila/react-usa-map) [![codebeat badge](https://codebeat.co/badges/edd62a75-c313-47c7-b239-d1d1848d3621)](https://codebeat.co/projects/github-com-gabidavila-react-usa-map-master)
 
-This is an alternate version for you that just want a simple customizable map on HTML. This maps shows states delimitations including DC, Hawaii and Alaska. D3 is not needed.
+This is an alternate version for you that just want a simple customizable map on HTML. This maps shows states delimitations including DC, Alaska, and Hawaii. D3 is not needed.
+
+It uses the [Albers projection](https://en.wikipedia.org/wiki/Albers_projection).
 
 ## [Live Example](http://react-usa-map-demo.herokuapp.com)
 Live: [http://react-usa-map-demo.herokuapp.com](http://react-usa-map-demo.herokuapp.com)
@@ -111,11 +113,13 @@ Additionally each `path` tag has an abbreviation of the current state followed b
 <path fill="#{custom color or #D3D3D3}" data-name="CA" class="CA state" d="...{polygon dimensions here}..."></path>
 ```
 
-# License & Sources
+# License
 
-This project is license is MIT, for more information please refer to [license](LICENSE.md).
+[MIT](LICENSE.md).
 
-The map is sourced from [wikimedia](https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg) and is under [Creative Commons Attribution-Share Alike 3.0 Unported](https://spdx.org/licenses/CC-BY-SA-3.0.html) license. This package is inspired on the [react-us-state-map](https://wwcw.npmjs.com/package/react-us-state-map) package, in fact the initial SVG class system is based on it.
+# Sources
+
+The map is sourced from [Wikimedia](https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg) and is under [Creative Commons Attribution-Share Alike 3.0 Unported](https://spdx.org/licenses/CC-BY-SA-3.0.html) license. This package is inspired on the [react-us-state-map](https://npmjs.com/package/react-us-state-map) package, in fact the initial SVG class system is based on it.
 
 # Contributing
 
