@@ -9,6 +9,10 @@ class USAMap extends React.Component {
     this.props.onClick(stateAbbreviation);
   };
 
+  mouseOverHandler = (stateAbbreviation) => {
+    this.props.onMouseOver(stateAbbreviation);
+  };
+
   fillStateColor = (state) => {
     if (this.props.customize && this.props.customize[state] && this.props.customize[state].fill) {
       return this.props.customize[state].fill;
@@ -24,10 +28,17 @@ class USAMap extends React.Component {
     return this.clickHandler;
   }
 
+  stateMouseOverHandler = (state) => {
+    if (this.props.customize && this.props.customize[state] && this.props.customize[state].mouseOverHandler) {
+      return this.props.customize[state].mouseOverHandler
+    }
+    return this.mouseOverHandler;
+  }
+
   buildPaths = () => {
     let paths = [];
     for (let stateKey in data) {
-      const path = <USAState key={stateKey} stateName={data[stateKey].name} dimensions={data[stateKey]["dimensions"]} state={stateKey} fill={this.fillStateColor(stateKey)} onClickState={this.stateClickHandler(stateKey)} />
+      const path = <USAState key={stateKey} stateName={data[stateKey].name} dimensions={data[stateKey]["dimensions"]} state={stateKey} fill={this.fillStateColor(stateKey)} onClickState={this.stateClickHandler(stateKey)} onMouseOverState={this.stateMouseOverHandler(stateKey)} />
       paths.push(path);
     };
     return paths;
