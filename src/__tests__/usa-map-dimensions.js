@@ -41,7 +41,7 @@ describe("Component: USAMap", () => {
   it("should render all states based on `usa-map-dimensions` file", () => {
     expect(onClickMock.mock.calls.length).toEqual(0);
     const statesLength = element.find("USAState").length;
-    expect(Object.keys(data).length).toEqual(statesLength);
+    expect(Object.keys(data()).length).toEqual(statesLength);
   });
 
   it("should add customised data by state", () => {
