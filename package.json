@@ -1,5 +1,5 @@
 {
-    "name": "@joe/react-usa-map",
+    "name": "react-usa-map",
     "version": "1.5.1",
     "description": "React component with all USA States with customizable options",
     "license": "MIT",
