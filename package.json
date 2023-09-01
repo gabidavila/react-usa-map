@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "postinstall": "webpack --mode production",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
