@@ -1,6 +1,13 @@
 {
-    "presets": ["es2015", "stage-2", "react"],
-    "plugins": [
-        ["inline-json-import", {}]
-    ]
+  "presets": [
+    ["@babel/preset-env",
+      {
+        "targets": "defaults"
+      },
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins":[
+    "@babel/plugin-transform-runtime"
+  ],
 }

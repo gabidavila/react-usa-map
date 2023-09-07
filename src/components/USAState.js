@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const USAState = (props) => {
   return (
@@ -7,4 +8,14 @@ const USAState = (props) => {
     </path>
   );
 }
+
+USAState.propTypes = {
+  dimensions: PropTypes.any,
+  fill: PropTypes.any,
+  state: PropTypes.any,
+  onClickState: PropTypes.func,
+  stateName: PropTypes.any
+
+};
+
 export default USAState;
